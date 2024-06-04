@@ -2,17 +2,38 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>반응형 웹 패턴</title>
+        <style>
+            * { margin: 0;
+                padding: 0 }
+            body {  width: 960px;
+                    margin: 0 auto; }
+            #menu { width: 300px;
+                    float: left; } /*12-7: left, 12-8: right*/
+            #content {  width: 660px;
+                        float: right; } /*12-7: right, 12-8: left*/
+            #li { list-style: none; }
+
+        /*  스마트폰 사이즈에서는 전부 해제 */
+            @media screen and (max-width: 767px) {
+                body { width: auto; }
+                #menu { width: auto;
+                        float:none; }
+                #content {  width: auto;
+                            float:none;}
+            }
+        </style>
     </head>
     <body>
-        <div>
+        <div id="menu">
             <ul>
                 <li> | 고양이 돌보기 | </li>
                 <li> | 고양이 먹이주기 | </li>
                 <li> | 고양이 길들이기 | </li>
             </ul>
         </div>
-        <div>
+        <div id="content">
             <h2> 애완묘 집사되기 </h2>
             <img src="cat.jpg">
             <p>고양이는 전세계 많은 사람들로부터 사랑받는 애완동물로 영악하고 독립심이 강하다.</p>
