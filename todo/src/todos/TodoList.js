@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import TodoItem from './TodoItem';
 import './TodoList.css';
 // 할 일 목록을 보여주는 기능
