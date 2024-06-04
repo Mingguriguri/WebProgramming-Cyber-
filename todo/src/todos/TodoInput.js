@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './TodoInput.css';
-import { MdAddCircle } from "react-icon/md";
+import {MdAddCircle} from "react-icons/md";
 
 const TodoInput = ({onAdd}) => {
 
@@ -8,7 +8,7 @@ const TodoInput = ({onAdd}) => {
     const [text, setText] = useState('')
 
     const changeInput = (evt) => {
-        const {value} = evt.target()
+        const { value } = evt.target; // evt.target() -> evt.targe
         setText(value)
     }
 
@@ -23,10 +23,12 @@ const TodoInput = ({onAdd}) => {
         textRef.current.focus();
     }
 
-
     return (
         <form className='TodoInput' onSubmit={onSubmit}>
-            <input type='text' value={text} onChange={changeInput} ref={textRef}/>
+            <input type='text'
+                   value={text}
+                   onChange={changeInput}
+                   ref={textRef}/>
             <button>
                 <MdAddCircle className='icon' size='50'>
                 </MdAddCircle>
