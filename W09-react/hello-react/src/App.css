@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.box {
+  background-color: goldenrod;
+  color: ghostwhite;
+  width: 60%;
+  padding: 5px;
+  text-indent: 50px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
