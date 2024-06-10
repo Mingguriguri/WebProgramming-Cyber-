@@ -1,4 +1,16 @@
+# 수업 주차: 9-10주차
+## 9주차
+- react 기본 개념, JSX와 Component, JSX 문법 규칙
+
+## 10주차
+- 자바스크립트 문법
+- props를 통해 Component에게 값 전달
+- useState를 통해 Component에서 바뀌는 값 관리
+
+---
+
 # Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
