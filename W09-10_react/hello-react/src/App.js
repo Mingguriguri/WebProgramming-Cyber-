@@ -1,6 +1,8 @@
 import './App.css';
 import MyHello from './MyHello';
 import Child from './Child';
+import Child2 from './Child2';
+
 function App() {
   const name = '김민정';
   return (
@@ -17,12 +19,19 @@ function App() {
       <MyHello />
       <MyHello />
       {/* 주석 */}
+      <h2> props 기본 예제</h2>
       <hr />
       <Child name="김민정"/>
       <hr />
       <Child name="밍구"/>
       <hr />
       <Child />
+      
+      <h2>여러 개의 props, 비구조화 할당</h2>
+      <Child2 name="김민정" sno="201939734" department="의용생체공학과"/>
+      <hr/>
+      <Child2 name="김가천" sno="202020202" department="배고파부"/>
+
     </div>
   );
 }
