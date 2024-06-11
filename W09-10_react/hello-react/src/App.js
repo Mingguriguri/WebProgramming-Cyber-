@@ -1,6 +1,6 @@
 import './App.css';
 import MyHello from './MyHello';
-
+import Child from './Child';
 function App() {
   const name = '김민정';
   return (
@@ -17,6 +17,12 @@ function App() {
       <MyHello />
       <MyHello />
       {/* 주석 */}
+      <hr />
+      <Child name="김민정"/>
+      <hr />
+      <Child name="밍구"/>
+      <hr />
+      <Child />
     </div>
   );
 }
