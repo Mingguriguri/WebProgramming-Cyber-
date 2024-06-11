@@ -2,10 +2,12 @@ import './App.css';
 import MyHello from './MyHello';
 import Child from './Child';
 import Child2 from './Child2';
+import Counter from './Counter';
 
 function App() {
   const name = '김민정';
   return (
+    // 1. JSX 문법 이해 & React Component 이해
     // JSX 문법규칙2 - 여러 개의 태그는 하나의 태그로 묶여야 한다. (지금의 div태그처럼)
     <div className="App">
       <h1> Hello This is WebProgramming lecture</h1>
@@ -19,8 +21,11 @@ function App() {
       <MyHello />
       <MyHello />
       {/* 주석 */}
+
       <h2> props 기본 예제</h2>
       <hr />
+
+      {/* 2. props 이해 */}
       <Child name="김민정"/>
       <hr />
       <Child name="밍구"/>
@@ -32,6 +37,9 @@ function App() {
       <hr/>
       <Child2 name="김가천" sno="202020202" department="배고파부"/>
 
+      {/* 3. useState 이해 */}
+      <h1>Counter</h1>
+      <Counter />
     </div>
   );
 }
