@@ -8,4 +8,8 @@ function Child(props){
     );
 }
 
+// 컴포넌트 밖에 선언
+Child.defaultProps = {
+    name: '심미소'
+};
 export default Child;
