@@ -1,10 +1,12 @@
 import './App.css';
-import InputTest from './InputTest';
+//import InputTest from './InputTest';
+import InputSample from './InputSample';
 
 function App() {
   return (
     <div>
-      <InputTest />
+      {/* <InputTest /> */}
+      <InputSample />
     </div>
   );
 }
